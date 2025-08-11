@@ -1,4 +1,27 @@
 .nav-container{
     background-color: black;
     color: white;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+
+}
+.brand-name{
+    font-size: 18px;
+
+}
+.menu{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.menu img{
+    width: 15px;
 }

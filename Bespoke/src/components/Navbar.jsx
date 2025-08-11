@@ -1,5 +1,6 @@
 import './CSS/navbar.css'
 import MenuImage from '../assets/Menu.png'; 
+import { ProductDesign } from './ProductDesign';
 export function Navbar(){
     return(
 <div className="nav-container">
@@ -8,10 +9,10 @@ export function Navbar(){
     Bespoke
 </div>
 <div className="menu">
-    Menu <span><img src={MenuImage} alt="" /></span>
+    MENU <span><img src={MenuImage} alt="" /></span>
 </div>
     </div>
-
+<ProductDesign/>
 </div>
 
     );
