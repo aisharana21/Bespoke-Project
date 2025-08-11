@@ -1,0 +1,79 @@
+.our-value-grid-container{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.values-heading h1{
+    font-weight: 400; 
+  max-width: 270px; 
+  line-height: 1;
+    text-transform: uppercase;
+
+  
+}
+.our-values-description{
+    padding: 15px;
+    background-color: rgb(40, 40, 129);
+}
+.colored-text{
+    color: #FF6C2D;
+}
+.values-description{
+    color: gray;
+    max-width: 350px;
+    height: 100px;
+    margin: 15px 0;
+    font-size: 15px;
+}
+.values-button{
+    margin-top: 10px;
+    height: 50px;
+    align-content: center;
+}
+.values-button button{
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 50px;
+    color: black;
+  transition: 
+  background-color 0.3s ease-in-out,
+   color 0.3s ease-in-out;
+
+}
+.values-button button:hover{
+    background-color: #FF6C2D;
+    border: none;
+}
+.values-container{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap: 10px;
+    justify-content: center;
+    background-color: darkgoldenrod;
+}
+.values{
+    background-color: black;
+    color: white;
+    /* width: 250px; */
+    /* width: 250px; */
+    height: 250px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.value-img img{
+    width: 50px;
+}
+.value-img {
+    margin-bottom: 25px;
+    padding: 10px;
+}
+.value-heading{
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.value-description{
+    color: gray;
+}

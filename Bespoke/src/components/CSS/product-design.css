@@ -4,22 +4,21 @@
     grid-template-columns: 1fr 1fr;
     height: 500px;
     /* justify-content: space-between; */
-    padding: 15px;
+    padding: 10px;
     margin-top: 10px;
 
 
 }
 .product-design-description{
-    font-weight: normal; 
-    padding: 10px;
+    padding: 15px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 }
-.design-description-container{
+/* .design-description-container{
 
 
-}
+} */
  .design-title{
     margin-bottom: 10px;
  }
@@ -91,7 +90,7 @@ align-items: center;
     border-radius: 5px;
 }
 .images-set img:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+box-shadow: 0 4px 12px rgba(192, 156, 111, 0.1);
 }
 
 
