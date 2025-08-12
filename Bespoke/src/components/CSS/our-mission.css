@@ -1,51 +1,41 @@
-.our-mission-container{
+.our-mission-container {
     background-color: black;
     color: white;
-        
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        max-width: 100%;
-padding: 15px;
-       
-        margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    padding: 15px;
+
+    margin: 0 auto;
 
 }
-.our-mission-title{
+
+.our-mission-title {
     border-bottom: 1px solid gray;
     padding: 15px;
 
 }
+
 .about-our-mission {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-  max-width: 95%;
-  font-size: 16px;
-  text-align: justify;
-  padding: 10px;
-  text-transform: uppercase;
-  text-indent: 200px; 
-
+    align-items: center; */
+    /* max-width: 95%;
+    font-size: 16px;
+    text-align: justify;
+    padding: 10px;
+    text-transform: uppercase;
+    text-indent: 200px; */
+   font-size: 16px;
+    text-align: justify;
+    padding: 10px;
+    text-transform: uppercase;
+    text-indent: 200px;
+    max-width: 95%;
 }
 
 
-@media (max-width: 1024px) {
-    .about-our-mission {
-        text-indent: 100px;
-    }
-}
 
-/* Small screens */
-@media (max-width: 768px) {
-    .about-our-mission {
-        text-indent: 50px;
-    }
-}
 
-/* Extra small screens */
-@media (max-width: 480px) {
-    .about-our-mission {
-        text-indent: 20px;
-    }
-}
