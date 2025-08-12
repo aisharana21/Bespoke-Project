@@ -1,8 +1,17 @@
 .our-value-grid-container{
-    padding-top: 30px;
+    /* padding-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+      max-width: 100%; */
+   padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%; /* Control maximum width */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto;
+    gap: 20px;  
+    padding-left:15px ;
+    padding-right:15px ;
 }
 .values-heading h1{
     font-weight: 400; 
@@ -14,7 +23,6 @@
 }
 .our-values-description{
     padding: 15px;
-    background-color: rgb(40, 40, 129);
 }
 .colored-text{
     color: #FF6C2D;
@@ -51,7 +59,6 @@
     grid-template-columns: 250px 250px;
     gap: 10px;
     justify-content: center;
-    background-color: darkgoldenrod;
 }
 .values{
     background-color: black;
@@ -76,4 +83,5 @@
 }
 .value-description{
     color: gray;
+    height: auto;
 }
