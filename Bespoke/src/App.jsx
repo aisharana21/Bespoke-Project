@@ -1,19 +1,55 @@
 import './App.css'
 import { Navbar } from './components/Navbar'
-import { OurMission } from './components/OurMission'
-import { OurValues } from './components/OurValues'
-import { RequestProduct } from './components/RequestProduct'
+import { HomePage } from './components/HomePage'
 import { Footer } from './components/Footer'
 import { Copyright } from './components/Copyright'
+import { Routes, Route } from 'react-router-dom'
+import { Service } from './components/Service'
+import { Portfolio } from './components/Portfolio'
+import { ContactUs } from './components/ContactUs'
+import { Values } from './components/Values'
+import { RequestQuote } from './components/RequestQuote'
 function App() {
-return(  <>
-  <Navbar/>
-    <OurMission/>
-<OurValues/>
-<RequestProduct/>
-<Footer/>
-<Copyright/>
-  </>
-)}
+  return (<>
+    <Navbar />
 
+    <Routes>
+      <Route
+        path='/'
+        element={<HomePage />}
+      />
+      <Route
+        path='/service'
+        element={<Service />}
+
+      />
+      <Route
+        path='/portfolio'
+        element={<Portfolio />}
+
+      />
+      <Route
+        path='/contactus'
+        element={<ContactUs />}
+
+      />
+      <Route
+        path='/values'
+        element={<Values/>}
+
+      />
+      <Route
+        path='/requestQuote'
+        element={<RequestQuote/>}
+
+      />
+
+      
+    </Routes>
+
+    <Footer />
+    <Copyright />
+  </>
+  )
+}
 export default App

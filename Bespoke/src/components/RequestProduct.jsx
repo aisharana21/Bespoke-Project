@@ -1,5 +1,7 @@
 import './CSS/request-product.css'
 import LogoVideo from "../assets/loop.mp4"; 
+import { Link, Links } from 'react-router-dom';
+import { RequestQuote } from './RequestQuote';
 
 export function RequestProduct(){
     return(
@@ -12,7 +14,7 @@ export function RequestProduct(){
 
       <div className="video-container-description">
         <h2>get your product started today</h2>
-        <button>request a quote</button>
+        <button> <Link  to="/requestQuote" className='link-style' >request a quote</Link> </button>
       </div>
     </div>
 

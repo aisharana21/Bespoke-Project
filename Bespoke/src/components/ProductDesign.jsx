@@ -2,6 +2,8 @@ import './CSS/product-design.css'
 import WomenImage from '../assets/women.png'; 
 import BagImage from '../assets/bag.png'; 
 import ManImage from '../assets/man.png'; 
+import './CSS/DefaultStyle/text-color.css';
+
 import { useState } from 'react';
 
 

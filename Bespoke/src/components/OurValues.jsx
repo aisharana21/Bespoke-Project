@@ -1,6 +1,8 @@
 import './CSS/our-values.css'
 import starImage from '../assets/star.png'; 
 import ovalImage from '../assets/oval.png'; 
+import { Values } from './Values';
+import { Link } from "react-router-dom";
 
 export function OurValues(){
 
@@ -17,7 +19,7 @@ export function OurValues(){
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </div>
     <div className="values-button">
-        <button>COMPANY VALUES</button>
+        <button> <Link className='link-style' to="/values" >COMPANY VALUES</Link> </button>
     </div>
 </div>
 
