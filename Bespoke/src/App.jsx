@@ -9,6 +9,7 @@ import { Portfolio } from './components/Portfolio'
 import { ContactUs } from './components/ContactUs'
 import { Values } from './components/Values'
 import { RequestQuote } from './components/RequestQuote'
+import { ProjectDetail } from './components/ProjectDetail'
 function App() {
   return (<>
     <Navbar />
@@ -23,11 +24,7 @@ function App() {
         element={<Service />}
 
       />
-      <Route
-        path='/portfolio'
-        element={<Portfolio />}
-
-      />
+      
       <Route
         path='/contactus'
         element={<ContactUs />}
@@ -41,6 +38,16 @@ function App() {
       <Route
         path='/requestQuote'
         element={<RequestQuote/>}
+
+      />
+      <Route
+        path='/portfolio'
+        element={<Portfolio />}
+
+      />
+      <Route
+        path='/portfolio/:projectid'
+        element={<ProjectDetail/>}
 
       />
 

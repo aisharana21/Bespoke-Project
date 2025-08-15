@@ -30,7 +30,7 @@ text-transform: uppercase;
 }
 .choose-bespoke-list{
     text-align: center;
-    color: gray;
+color: rgb(207, 204, 204);
 }
 .choose-bespoke-img{
 display: flex;

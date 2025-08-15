@@ -76,8 +76,8 @@ export function Values(){
             </div>
 
            <div
-            className="service-overview-card-container ">
-            <div className="service-overview-card-grid card-grid">
+            className="value-overview-card-container ">
+            <div className="value-overview-card-grid card-grid">
                 {
                     valueData.map((data, index) => (
                         <div key={index} className="values-card card">

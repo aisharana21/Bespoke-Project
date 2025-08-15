@@ -1,8 +1,9 @@
 .service-cta-container{
     padding: 25px;
+    
 }
 .service-cta{
-    width: 500px;
+   max-width: 500px;
     display: flex;
     flex-direction: column;
   

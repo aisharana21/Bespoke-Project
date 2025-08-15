@@ -1,31 +1,63 @@
-import './CSS/navbar.css'
+import './CSS/navbar.css';
 import MenuImage from '../assets/Menu.png'; 
 import LogoImage from '../assets/logo.png'; 
-// import { ProductDesign } from './ProductDesign';
-import { Service } from './Service';
-import { ContactUs } from './ContactUs';
-import { Portfolio } from './Portfolio';
-import { Link, Links } from 'react-router-dom';
-export function Navbar(){
-    return(
-<div className="nav-container">
-    <div className="nav">
-<div className="brand-name">
-  <span className='logo-image'><img src={LogoImage} alt="" /></span>  Bespoke
-</div>
-<div className="menu">
-<ul>
+import { NavLink } from "react-router-dom";
 
-    <li>
-      <Link className='link-style' to="/">Home</Link>  </li>
-    <li><Link className='link-style' to ="/service"> Services </Link></li>
-    <li><Link to ='/portfolio' className='link-style'>Portfolio</Link></li>
-<li><Link className='link-style' to ="/contactus"> Contact Us </Link></li>
-</ul>
-    {/* MENU <span><img src={MenuImage} alt="" /></span> */}
-</div>
+export function Navbar() {
+  const getNavColor = ({isActive}) => {
+    return {
+      color: isActive ? '#FF6C2D' : 'white',
+    };
+  };
+
+  return (
+    <div className="nav-container">
+      <div className="nav">
+        <div className="brand-name">
+          <span className='logo-image'><img src={LogoImage} alt="" /></span>  
+          Bespoke
+        </div>
+        <div className="menu">
+          <ul>
+            <li>
+              <NavLink 
+                className='link-style' 
+                to="/" 
+                style={getNavColor}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink 
+                className='link-style' 
+                to="/service" 
+                style={getNavColor}
+              >
+                Services
+              </NavLink>
+            </li>
+            <li>
+              <NavLink 
+                to='/portfolio' 
+                className='link-style'
+                style={getNavColor}
+              >
+                Portfolio
+              </NavLink>
+            </li>
+            <li>
+              <NavLink 
+                className='link-style' 
+                to="/contactus"
+                style={getNavColor}
+              >
+                Contact Us
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
-
-    );
+  );
 }
